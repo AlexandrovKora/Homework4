@@ -51,5 +51,33 @@ Console.WriteLine(res);
 CreateArray(int size), генерирующий массив на основе данных, 
 вводимых пользователем.
 */
+/*
+int[] CreateArray(int size)
+{
+    int[] array = new int[size]; 
+    int i=0;
+    while(i < array.Length) //i-первый работй элемент(не минимальнео значение).если из начала в конец i--
+        {
+        Console.WriteLine($"Input {i+1} element");
+        int element=Convert.ToInt32(Console.ReadLine());
+        array[i]=element;
+        i++;
+        }
+        //перевое знаечение включается, а второе -нет, поэтому +1 ставим, чтобы включалось)
+    return array;
+}
 
+//для отображения
+void ShowArray(int[] array)
+{
+    for(int i = 0; i<array.Length; i++)
+        Console.Write(array[i]+" ");
+    Console.WriteLine();
+}
+
+Console.Write("Input an array size: ");
+int a=Convert.ToInt32(Console.ReadLine());
+int[] myArray=CreateArray(a);
+ShowArray(myArray);
+*/
 
